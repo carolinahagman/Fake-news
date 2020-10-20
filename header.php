@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style/header.css">
     <link rel="stylesheet" href="style/article-preview.css">
     <link rel="stylesheet" href="style/article.css">
+    <link rel="stylesheet" href="style/media.css">
     <title>Fake News</title>
 </head>
 

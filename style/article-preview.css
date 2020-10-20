@@ -1,0 +1,64 @@
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.article-preview {
+    width: 90vw;
+    padding: 0.5rem;
+    overflow: hidden;
+}
+
+.title {
+    font-family: "Neuton", serif;
+    font-size: 1.5rem;
+    color: var(--txt-color);
+}
+
+.article-info {
+    height: 100%;
+    width: 50%;
+    float: left;
+}
+.article-sub-header {
+    height: 100%;
+}
+
+.img-preview {
+    width: 50%;
+    float: right;
+    height: 100%;
+}
+
+.img-preview-item {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.like-btn {
+    color: var(--likes-color);
+    font-family: var(--p-font);
+}
+
+.date {
+    font-size: 1rem;
+    font-family: var(--p-font);
+    color: var(--author-color);
+}
+
+.author {
+    font-size: 1rem;
+    font-family: var(--p-font);
+    color: var(--author-color);
+}
+
+.read-more-btn {
+    font-size: 1rem;
+    font-family: var(--p-font);
+    color: var(--txt-color);
+}
+
+.divider {
+    width: 80%;
+}

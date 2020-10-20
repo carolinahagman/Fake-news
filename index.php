@@ -8,17 +8,20 @@ require __DIR__ . '/header.php';
 
 <main>
   <section class="article-preview">
-    <h2 class="title"></h2>
-    <div class="article-info">
-      <button class="like-btn"></button>
-      <p class="date"></p>
-      <p class="author"></p>
-      <button class="read-more-btn"><a href="">Read More</a>
-      </button>
+    <h2 class="title">Don’t be fooled by fake news</h2>
+    <div class="article-sub-header">
+      <div class="article-info">
+        <button class="like-btn"> <img src="/img/heart.svg" alt="heart">like</button>
+        <p class="date">date</p>
+        <p class="author">Carolina Hagman</p>
+        <button class="read-more-btn"><a href="">Read More</a>
+        </button>
+      </div>
+      <div class="img-preview"><img class="img-preview-item" src="/img/1.jpg" alt=""></div>
     </div>
-    <div class="img-preview"><img src="/img/" alt=""></div>
+    <hr class="divider">
   </section>
-  <hr class="separate-line">
+
 </main>
 </body>
 
