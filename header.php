@@ -14,4 +14,5 @@
 <body>
     <header>
         <h1 class="head-title">Fake News</h1>
+        <hr>
     </header>
