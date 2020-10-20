@@ -1,0 +1,25 @@
+/* font-family: 'Playfair Display', serif; (HEAD TITLE)
+font-family: 'Neuton', serif; (RUBRIK)
+font-family: 'Roboto', sans-serif; (BRÖDTEXT) */
+
+:root {
+    --bg-color: white;
+    --txt-color: #2b2b2b;
+    --author-color: #8e8f90;
+    --likes-color: #ff9e9e;
+    --rubrik-font: "Neuton", serif;
+    --p-font: "Roboto", sans-serif;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.head-title {
+    font-size: 3rem;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-family: "Playfair Display", serif;
+    color: var(--txt-color);
+}
