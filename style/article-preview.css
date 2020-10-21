@@ -14,16 +14,15 @@ main {
 
 .title {
     font-family: "Neuton", serif;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: var(--txt-color);
     padding-bottom: 0.5rem;
-    margin-left: 1rem;
+    margin: 0 1rem;
 }
 
 .article-info {
     height: 100%;
     width: 50%;
-    float: left;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -31,11 +30,11 @@ main {
 }
 .article-sub-header {
     height: 100%;
+    display: flex;
 }
 
 .img-preview {
     width: 50%;
-    float: right;
     height: 100%;
 }
 
@@ -55,15 +54,15 @@ main {
     margin-right: 2px;
 }
 .date {
-    font-size: 1rem;
+    font-size: 0.75rem;
     font-family: var(--p-font);
     color: var(--author-color);
     margin-top: 0.5rem;
 }
 
 .author {
-    font-size: 1rem;
-    font-family: var(--p-font);
+    font-size: 0.75rem;
+    font-family: var(--author-font);
     color: var(--author-color);
     margin-top: 0.1rem;
 }
@@ -71,17 +70,22 @@ main {
 .read-more-btn {
     margin-top: 0.5rem;
     font-size: 1rem;
-    font-family: var(--p-font);
-    color: var(--txt-color);
     border-radius: 0;
+    border: 2px solid black;
     padding: 0.5rem 1rem;
 }
-
 .read-more {
     font-size: 1rem;
     font-family: var(--p-font);
     color: var(--txt-color);
     text-decoration: none;
+    height: 100%;
+    width: 100%;
+}
+.read-more-btn:hover {
+    cursor: pointer;
+    background: black;
+    color: white;
 }
 
 .divider {

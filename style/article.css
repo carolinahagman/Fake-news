@@ -1,0 +1,30 @@
+.image-article {
+    width: 100%;
+}
+.like-span {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.title-article {
+    font-size: 1.5rem;
+    font-family: "Neuton", serif;
+    color: var(--txt-color);
+    padding: 0 0.75rem;
+}
+
+.author-date {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.75rem;
+}
+
+.main-article {
+    padding: 0 0.75rem;
+}
+
+.content {
+    font-family: var(--p-font);
+    font-size: 1rem;
+    color: var(--txt-color);
+}

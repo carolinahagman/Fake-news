@@ -5,11 +5,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Neuton&family=Playfair+Display&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/global.css">
     <link rel="stylesheet" href="style/header.css">
     <link rel="stylesheet" href="style/article-preview.css">
     <link rel="stylesheet" href="style/article.css">
     <link rel="stylesheet" href="style/media.css">
+    <link rel="stylesheet" href="style/typography.css">
     <title>Fake News</title>
 </head>
 

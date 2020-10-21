@@ -14,4 +14,5 @@ header {
 .line-header {
     color: var(--txt-color);
     width: 80vw;
+    margin-bottom: 1rem;
 }
