@@ -1,24 +1,33 @@
 main {
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 
 .article-preview {
-    width: 90vw;
-    padding: 0.5rem;
-    overflow: hidden;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1rem;
 }
 
 .title {
     font-family: "Neuton", serif;
     font-size: 1.5rem;
     color: var(--txt-color);
+    padding-bottom: 0.5rem;
+    margin-left: 1rem;
 }
 
 .article-info {
     height: 100%;
     width: 50%;
     float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 .article-sub-header {
     height: 100%;
@@ -39,26 +48,45 @@ main {
 .like-btn {
     color: var(--likes-color);
     font-family: var(--p-font);
+    border: none;
 }
 
+.heart-like {
+    margin-right: 2px;
+}
 .date {
     font-size: 1rem;
     font-family: var(--p-font);
     color: var(--author-color);
+    margin-top: 0.5rem;
 }
 
 .author {
     font-size: 1rem;
     font-family: var(--p-font);
     color: var(--author-color);
+    margin-top: 0.1rem;
 }
 
 .read-more-btn {
+    margin-top: 0.5rem;
     font-size: 1rem;
     font-family: var(--p-font);
     color: var(--txt-color);
+    border-radius: 0;
+    padding: 0.5rem 1rem;
+}
+
+.read-more {
+    font-size: 1rem;
+    font-family: var(--p-font);
+    color: var(--txt-color);
+    text-decoration: none;
 }
 
 .divider {
-    width: 80%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 50%;
+    color: var(--txt-color);
 }
