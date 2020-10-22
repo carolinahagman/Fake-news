@@ -7,7 +7,7 @@ $pdo = new PDO('sqlite:./database/fake_news.db');
 
 $stmnt = $pdo->query('SELECT * FROM posts
 INNER JOIN users
-ON posts.user_id = users.user_id
+ON posts.author_id = users.user_id
 ORDER BY date DESC');
 
 $posts = $stmnt->fetchAll(PDO::FETCH_ASSOC);

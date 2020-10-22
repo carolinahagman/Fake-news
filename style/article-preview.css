@@ -12,14 +12,6 @@ main {
     padding: 0 1rem;
 }
 
-.title {
-    font-family: "Neuton", serif;
-    font-size: 1.4rem;
-    color: var(--txt-color);
-    padding-bottom: 0.5rem;
-    margin: 0 1rem;
-}
-
 .article-info {
     height: 100%;
     width: 50%;
@@ -48,31 +40,20 @@ main {
     color: var(--likes-color);
     font-family: var(--p-font);
     border: none;
+    background: none;
 }
 
-.heart-like {
+.heart {
     margin-right: 2px;
-}
-.date {
-    font-size: 0.75rem;
-    font-family: var(--p-font);
-    color: var(--author-color);
-    margin-top: 0.5rem;
-}
-
-.author {
-    font-size: 0.75rem;
-    font-family: var(--author-font);
-    color: var(--author-color);
-    margin-top: 0.1rem;
 }
 
 .read-more-btn {
     margin-top: 0.5rem;
     font-size: 1rem;
     border-radius: 0;
-    border: 2px solid black;
+    border: 2px solid var(--txt-color);
     padding: 0.5rem 1rem;
+    background: none;
 }
 .read-more {
     font-size: 1rem;
@@ -84,7 +65,7 @@ main {
 }
 .read-more-btn:hover {
     cursor: pointer;
-    background: black;
+    background: var(--txt-color);
     color: white;
 }
 

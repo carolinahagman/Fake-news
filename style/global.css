@@ -1,17 +1,9 @@
-/* font-family: 'Playfair Display', serif; (HEAD TITLE)
-font-family: 'Neuton', serif; (RUBRIK)
-font-family: 'Roboto', sans-serif; (BRÖDTEXT) */
-
 :root {
     /* colors */
     --bg-color: white;
     --txt-color: #2b2b2b;
     --author-color: #535455;
     --likes-color: #de2f2f;
-    /* fonts */
-    --rubrik-font: "Neuton", serif;
-    --p-font: "Roboto", sans-serif;
-    --author-font: "Abril Fatface";
 }
 * {
     box-sizing: border-box;

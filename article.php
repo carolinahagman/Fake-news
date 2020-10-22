@@ -17,22 +17,25 @@ require __DIR__ . '/header.php';
     <?php
     $id = $_GET['id'];
     $post = getArticleById($posts, $id);
-
     ?>
 
 
     <main class="main-article">
-        <div class="image-box">
-            <img class="image-article" src="./img/<?= $post['image']; ?>" alt=""></div>
-
-        <span class="like-span"> <button class="like-btn"> <img class="heart-like" src="/img/heart.svg" alt="heart">like</button></span>
         <h2 class="title-article"><?= $post['title']; ?></h2>
-        <span class="author-date">
-            <p class="date"><?= $post['date']; ?></p>
-            <p class="author"> <?= $post['name']; ?></p>
+        <div class="img-box">
+            <img class="img-article" src="./img/<?= $post['image']; ?>" alt=""></div>
+        <span class="like-span">
+            <p class="date"><?= formatDate($post['date']); ?></p>
+            <button class="like-btn" onclick=<?php incrementLikeCounter($id); ?>>
+                <?= $post['like_counter']; ?><img class="heart-like" src="/img/heart.svg" alt="heart"></button>
         </span>
+
+
         <article class="main-article">
             <p class="content"> <?= $post['content']; ?></p>
+            <span class="author-span">
+                <p class="author-special"> <?= $post['name']; ?></p>
+            </span>
         </article>
 
     </main>

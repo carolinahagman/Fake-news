@@ -1,30 +1,26 @@
-.image-article {
+.img-article {
     width: 100%;
 }
 .like-span {
     display: flex;
-    justify-content: flex-end;
-}
-
-.title-article {
-    font-size: 1.5rem;
-    font-family: "Neuton", serif;
-    color: var(--txt-color);
-    padding: 0 0.75rem;
-}
-
-.author-date {
-    display: flex;
     justify-content: space-between;
+}
+
+/* .date-span {
+    display: ;
     padding: 0 0.75rem;
+    margin-bottom: 1rem;
+} */
+.heart-like {
+    margin-left: 2px;
 }
 
 .main-article {
     padding: 0 0.75rem;
+    margin-top: 1rem;
 }
 
-.content {
-    font-family: var(--p-font);
-    font-size: 1rem;
-    color: var(--txt-color);
+.author-span {
+    display: flex;
+    justify-content: flex-end;
 }

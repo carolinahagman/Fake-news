@@ -4,6 +4,8 @@ declare(strict_types=1);
 require __DIR__ . '/data.php';
 
 
+
+
 //function to connect article preview and article
 function getArticleById(array $posts, string $id): array
 {
@@ -15,7 +17,7 @@ function getArticleById(array $posts, string $id): array
 }
 
 
-//function to change date 
+//functions to change date 
 
 function daysSinceToday(string $date): int
 {
@@ -24,6 +26,7 @@ function daysSinceToday(string $date): int
     $timeDiff = $today->diff($dateToCheck);
     return $timeDiff->d;
 }
+
 function postedDateToString(int $daysAgo): string
 {
     switch ($daysAgo) {
@@ -36,4 +39,20 @@ function postedDateToString(int $daysAgo): string
     }
 }
 
+function formatDate(string $date): string
+{
+    $dateCreate = (date_create($date));
+    return (date_format($dateCreate, 'jS F Y'));
+}
+
+
 //function for likebutton
+//TODO fix function so like_counter doesn't change when page reload.
+
+function incrementLikeCounter(int $id): void
+{
+
+    $pdo = $GLOBALS['pdo']; // get pdo from global scope
+    $response = $pdo->query('UPDATE posts SET like_counter = like_counter + 1 WHERE id = ?');
+    $response->execute([$id]);
+}
