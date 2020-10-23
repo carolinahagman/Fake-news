@@ -9,6 +9,7 @@ header {
 .logo {
     width: 90vw;
     margin: 1rem;
+    max-width: 800px;
 }
 
 .home {

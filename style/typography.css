@@ -49,6 +49,13 @@
     margin: 5px 0px 20px;
     line-height: 1;
 }
+
+.like-text {
+    font-family: var(--p-font);
+    font-size: 1rem;
+    color: var(--likes-color);
+    margin-top: 2px;
+}
 .author-special {
     font-size: 1rem;
     font-family: var(--author-font);
@@ -56,6 +63,7 @@
     margin: 1rem;
 }
 .content {
+    padding: 0 2rem;
     font-family: var(--p-font);
     font-size: 18px;
     color: var(--txt-color);

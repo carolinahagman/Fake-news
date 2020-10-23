@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/global.css">
     <link rel="stylesheet" href="style/header.css">
-    <link rel="stylesheet" href="style/article-preview.css">
+    <link rel="stylesheet" href="style/index.css">
     <link rel="stylesheet" href="style/article.css">
     <link rel="stylesheet" href="style/media.css">
     <link rel="stylesheet" href="style/typography.css">

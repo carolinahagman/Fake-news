@@ -17,6 +17,7 @@ require __DIR__ . '/header.php';
     <?php
     $id = $_GET['id'];
     $post = getArticleById($posts, $id);
+
     ?>
 
 
@@ -26,8 +27,17 @@ require __DIR__ . '/header.php';
             <img class="img-article" src="./img/<?= $post['image']; ?>" alt=""></div>
         <span class="like-span">
             <p class="date"><?= formatDate($post['date']); ?></p>
-            <button class="like-btn" onclick=<?php incrementLikeCounter($id); ?>>
-                <?= $post['like_counter']; ?><img class="heart-like" src="/img/heart.svg" alt="heart"></button>
+            <form method="post">
+                <input type="submit" name="like" class="like-btn" value="" />
+                <label for="like" class="like-text"><?= $post['like_counter']; ?></label>
+            </form>
+
+            <?php
+            if (array_key_exists('like', $_POST)) {
+                incrementLikeCounter($id);
+            }
+            ?>
+
         </span>
 
 
@@ -39,6 +49,9 @@ require __DIR__ . '/header.php';
         </article>
 
     </main>
+
+
+
 </body>
 
 </html>

@@ -5,21 +5,23 @@ require __DIR__ . '/functions.php';
 require __DIR__ . '/header.php';
 
 ?>
-<?php foreach ($posts as $post) :
-  $title = $post['title'];
-  $date = $post['date'];
-  $image = $post['image'];
-  $likes = $post['like_counter'];
-  $name = $post['name'];
-  $id = $post['id'];
+<main class="main-index">
+  <?php foreach ($posts as $post) :
+    $title = $post['title'];
+    $date = $post['date'];
+    $image = $post['image'];
+    $likes = $post['like_counter'];
+    $name = $post['name'];
+    $id = $post['id'];
 
-?>
-  <main>
-    <h2 class="title-preview"><?= $title; ?></h2>
-    <section class="article-preview">
+  ?>
+    <section class="article-item">
+      <div class="title-div">
+        <h2 class="title-preview"><?= $title; ?></h2>
+      </div>
       <div class="article-sub-header">
         <div class="article-info">
-          <button class="like-btn">
+          <button class="see-like">
             <img class="heart" src="/img/heart.svg" alt="heart"><?= $likes; ?>
           </button>
           <p class="date"><?= postedDateToString(daysSinceToday($post['date'])) ?> </p>
@@ -33,7 +35,7 @@ require __DIR__ . '/header.php';
       <hr class="divider">
     </section>
   <?php endforeach; ?>
-  </main>
-  </body>
+</main>
+</body>
 
-  </html>
+</html>

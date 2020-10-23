@@ -4,8 +4,6 @@ declare(strict_types=1);
 require __DIR__ . '/data.php';
 
 
-
-
 //function to connect article preview and article
 function getArticleById(array $posts, string $id): array
 {
@@ -47,12 +45,11 @@ function formatDate(string $date): string
 
 
 //function for likebutton
-//TODO fix function so like_counter doesn't change when page reload.
 
 function incrementLikeCounter(int $id): void
 {
 
     $pdo = $GLOBALS['pdo']; // get pdo from global scope
-    $response = $pdo->query('UPDATE posts SET like_counter = like_counter + 1 WHERE id = ?');
+    $response = $pdo->prepare('UPDATE posts SET like_counter = like_counter + 1 WHERE id = ?');
     $response->execute([$id]);
 }
