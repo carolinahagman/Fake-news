@@ -21,9 +21,9 @@ require __DIR__ . '/header.php';
       </div>
       <div class="article-sub-header">
         <div class="article-info">
-          <button class="see-like">
+          <div class="see-like">
             <img class="heart" src="/img/heart.svg" alt="heart"><?= $likes; ?>
-          </button>
+          </div>
           <p class="date"><?= postedDateToString(daysSinceToday($post['date'])) ?> </p>
           <p class="author"><?= $name; ?></p>
 

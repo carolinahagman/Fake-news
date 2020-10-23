@@ -31,7 +31,6 @@ require __DIR__ . '/header.php';
                 <input type="submit" name="like" class="like-btn" value="" />
                 <label for="like" class="like-text"><?= $post['like_counter']; ?></label>
             </form>
-
             <?php
             if (array_key_exists('like', $_POST)) {
                 incrementLikeCounter($id);
