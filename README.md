@@ -1,29 +1,23 @@
 <img src="https://media4.giphy.com/media/26n6ziTEeDDbowBkQ/giphy.gif?cid=ecf05e4752a2dmevvyzp0y046sfwiyf3uuljt4aifjd3gqiz&rid=giphy.gif" width="100%">
 
 # Fake-news
-### The assignment was to create a news feed. Written with PHP, HTML and CSS.
 
-#### The news feed items should contain:
-- Title
-- Content
-- Author
-- Published date
-- Like counter _(the number of fake likes a news item has received)_
-    
-##### The news feed author items should contain the following data:
-- ID
-- Full name
+## Built With
+- PHP
+- HTML
+- CSS
 
-
-#### The project should use the following functionality:
-- Variables
-- Multiple data types
-- Arrays
-- Functions
-- Loops (for, while or foreach)
-- Output (echo, print etc.)
 
 ## Installation
+Clone the repository to your computer
+ ```
+$ git clone https://github.com/carolinahagman/Fake-news.git
+ ```
+Start a local server in the command line
+ ```
+ $ php -S localhost:8000
+ ```
+Open the index.php file in your browser
 
 ## Testers
 
