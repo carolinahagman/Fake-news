@@ -17,7 +17,6 @@ $post = getArticleById($posts, $id);
         <img class="img-article" src="./img/<?= $post['image']; ?>" alt=""></div>
     <span class="like-span">
         <p class="date"><?= formatDate($post['date']); ?></p>
-        <!-- TODO give up and make a like button in javascript -->
         <form method="post">
             <input type="submit" name="like" class="like-btn" value="" />
             <label for="like" class="like-text"><?= $post['like_counter']; ?></label>
