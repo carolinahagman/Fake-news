@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="style/media.css">
     <link rel="stylesheet" href="style/typography.css">
     <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/aeec863b76.js" crossorigin="anonymous"></script>
+
     <title> Fake News</title>
 </head>
 

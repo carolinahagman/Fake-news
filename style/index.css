@@ -17,7 +17,7 @@ main {
     max-width: 500px;
 }
 
-.article-item {
+.container {
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -31,7 +31,6 @@ main {
     width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: flex-start;
 }
 .article-sub-header {
@@ -50,24 +49,15 @@ main {
     object-fit: cover;
 }
 
-.heart {
-    padding-top: 5px;
-    height: 1rem;
-}
-.see-like {
+.likes {
     color: var(--likes-color);
     font-family: var(--p-font);
-    border: none;
-    background: none;
     height: 1rem;
-}
-
-.heart {
-    margin-right: 2px;
+    margin-bottom: 0.5rem;
 }
 
 .read-more-btn {
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     font-size: 1rem;
     border-radius: 0;
     border: 2px solid var(--txt-color);

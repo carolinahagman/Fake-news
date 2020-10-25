@@ -4,53 +4,45 @@ require __DIR__ . '/functions.php';
 require __DIR__ . '/header.php';
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
+<?php
+$id = $_GET['id'];
+$post = getArticleById($posts, $id);
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
-    <?php
-    $id = $_GET['id'];
-    $post = getArticleById($posts, $id);
-
-    ?>
+?>
 
 
-    <main class="main-article">
-        <h2 class="title-article"><?= $post['title']; ?></h2>
-        <div class="img-box">
-            <img class="img-article" src="./img/<?= $post['image']; ?>" alt=""></div>
-        <span class="like-span">
-            <p class="date"><?= formatDate($post['date']); ?></p>
-            <form method="post">
-                <input type="submit" name="like" class="like-btn" value="" />
-                <label for="like" class="like-text"><?= $post['like_counter']; ?></label>
-            </form>
-            <?php
-            if (array_key_exists('like', $_POST)) {
-                incrementLikeCounter($id);
-            }
-            ?>
+<main class="main-article">
+    <h2 class="title-article"><?= $post['title']; ?></h2>
+    <div class="img-box">
+        <img class="img-article" src="./img/<?= $post['image']; ?>" alt=""></div>
+    <span class="like-span">
+        <p class="date"><?= formatDate($post['date']); ?></p>
+        <!-- TODO give up and make a like button in javascript -->
+        <form method="post">
+            <input type="submit" name="like" class="like-btn" value="" />
+            <label for="like" class="like-text"><?= $post['like_counter']; ?></label>
+        </form>
+        <?php
+        if (array_key_exists('like', $_POST)) {
+            incrementLikeCounter($id);
+        }
+        ?>
 
+    </span>
+
+
+    <article class="main-article">
+        <p class="content"> <?= $post['content']; ?></p>
+        <span class="author-span">
+            <p class="author-special"> <?= $post['name']; ?></p>
         </span>
+    </article>
 
-
-        <article class="main-article">
-            <p class="content"> <?= $post['content']; ?></p>
-            <span class="author-span">
-                <p class="author-special"> <?= $post['name']; ?></p>
-            </span>
-        </article>
-
-    </main>
+</main>
 
 
 
 </body>
+<script src="/functions.js"></script>
 
 </html>

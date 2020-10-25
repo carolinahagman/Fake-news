@@ -10,15 +10,10 @@ header {
     width: 90vw;
     margin: 1rem;
     max-width: 500px;
+    cursor: pointer;
 }
 
 .home {
     text-decoration: none;
     cursor: pointer;
 }
-
-/* .line-header {
-    color: var(--txt-color);
-    width: 80vw;
-    margin-bottom: 1rem;
-} */

@@ -4,11 +4,9 @@
 }
 :root {
     /* fonts */
-    --title-font: "Playfair Display", serif; /*"Neuton", serif; */
+    --title-font: "Playfair Display", serif;
     --p-font: "Roboto", sans-serif;
     --author-font: "Breathing";
-
-    /* "Abril Fatface"; */
 }
 /* header */
 .head-title {
@@ -38,7 +36,7 @@
     font-size: 1rem;
     font-family: var(--p-font);
     color: var(--author-color);
-    margin-top: 0.1rem;
+    margin-top: 0.3rem;
 }
 
 /* article */
@@ -67,4 +65,9 @@
     font-family: var(--p-font);
     font-size: 18px;
     color: var(--txt-color);
+}
+
+.far,
+.fas {
+    font-size: 1rem;
 }

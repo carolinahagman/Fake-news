@@ -15,16 +15,16 @@ require __DIR__ . '/header.php';
     $id = $post['id'];
 
   ?>
-    <section class="article-item">
+    <section class="container">
       <div class="title-div">
         <h2 class="title-preview"><?= $title; ?></h2>
       </div>
       <div class="article-sub-header">
         <div class="article-info">
-          <div class="see-like">
-            <img class="heart" src="/img/heart.svg" alt="heart"><?= $likes; ?>
+          <div class="likes">
+            <i class="fas fa-heart"></i> <?= $likes; ?>
           </div>
-          <p class="date"><?= postedDateToString(daysSinceToday($post['date'])) ?> </p>
+          <p class="date"><?= postedDateToString(daysSinceToday($date)) ?> </p>
           <p class="author"><?= $name; ?></p>
 
           <a class="read-more" href="/article.php?id=<?= $id ?>"><button class="read-more-btn">Read More</button></a>
