@@ -1,12 +1,13 @@
 @media only screen and (min-width: 1150px) {
-    section {
-        width: 35vw !important;
-        padding: 0 2rem !important;
+    #media-container {
+        width: 35vw;
+        padding: 0 2rem;
     }
-    .main-index {
+
+    #media-main-index {
         display: flex;
-        flex-direction: row !important;
-        flex-wrap: wrap !important;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 }
 

@@ -5,7 +5,7 @@ require __DIR__ . '/functions.php';
 require __DIR__ . '/header.php';
 
 ?>
-<main class="main-index">
+<main class="main-index" id="media-main-index">
   <?php foreach ($posts as $post) :
     $title = $post['title'];
     $date = $post['date'];
@@ -15,7 +15,7 @@ require __DIR__ . '/header.php';
     $id = $post['id'];
 
   ?>
-    <section class="container">
+    <section class="container" id="media-container">
       <div class="title-div">
         <h2 class="title-preview"><?= $title; ?></h2>
       </div>
