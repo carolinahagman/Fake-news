@@ -24,7 +24,5 @@
 
         <a href="/index.php" class="home">
             <img class="logo" src="/img/FAKENEWS.svg" alt="logo">
-            <!-- <h1 class="head-title">Fake News</h1> -->
         </a>
-        <!-- <hr class="line-header"> -->
     </header>

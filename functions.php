@@ -44,7 +44,7 @@ function formatDate(string $date): string
 }
 
 
-//function for likebutton
+//function for like button
 
 function incrementLikeCounter(int $id): void
 {
