@@ -42,6 +42,5 @@ $post = getArticleById($posts, $id);
 
 
 </body>
-<script src="/functions.js"></script>
 
 </html>
