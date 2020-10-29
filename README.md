@@ -21,6 +21,8 @@ Start a local server in the command line
 Open the index.php file in your browser
 
 ## Testers
+- [Amanda Fager](https://github.com/amandafager)
+- 
 
 ## Code Review
 
