@@ -30,7 +30,7 @@ require __DIR__ . '/header.php';
           <a class="read-more" href="/article.php?id=<?= $id ?>"><button class="read-more-btn">Read More</button></a>
 
         </div>
-        <div class="img-preview"><img class="img-preview-item" src="/img/<?= $image; ?>" alt=""></div>
+        <div class="img-preview"><img class="img-preview-item" src="/img/<?= $image; ?>" alt="preview-image"></div>
       </div>
       <hr class="divider">
     </section>
