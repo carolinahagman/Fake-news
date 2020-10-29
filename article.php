@@ -14,7 +14,7 @@ $post = getArticleById($posts, $id);
 <main class="main-article">
     <h2 class="title-article"><?= $post['title']; ?></h2>
     <div class="img-box">
-        <img class="img-article" src="./img/<?= $post['image']; ?>" alt=""></div>
+        <img class="img-article" src="./img/<?= $post['image']; ?>" alt="article-image"></div>
     <span class="like-span">
         <p class="date"><?= formatDate($post['date']); ?></p>
         <form method="post">
