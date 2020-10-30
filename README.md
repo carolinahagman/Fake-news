@@ -22,9 +22,15 @@ Open the index.php file in your browser
 
 ## Testers
 - [Amanda Fager](https://github.com/amandafager)
-- 
+- [Ida From](https://github.com/Fvrom)
 
-## Code Review
+## Code Review by [Victor Stranne](https://github.com/vstranne)
+-
+-
+-
+-
+-
+
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details
