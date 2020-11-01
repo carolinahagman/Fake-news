@@ -11,8 +11,18 @@ The assignment was to create a news feed consisting of fake articles.
 -   CSS
 
 ## Installation
+You need [PHP](https://www.php.net/) to view this project. 
 
-Before installing this project make sure you have PHP and Sqlite installed
+You also need to make sure you have Sqlite installed.
+
+On macOS (with Brew)
+```
+$ brew install sqlite
+ ```
+On Windows (Ubuntu)
+```
+sudo apt-get install php-sqlite3
+```
 
 Clone the repository to your computer
 
