@@ -21,7 +21,6 @@
 
 <body>
     <header>
-
         <a href="/index.php" class="home">
             <img class="logo" src="/img/FAKENEWS.svg" alt="logo">
         </a>

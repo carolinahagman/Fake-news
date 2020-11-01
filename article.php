@@ -2,15 +2,10 @@
 require __DIR__ . '/data.php';
 require __DIR__ . '/functions.php';
 require __DIR__ . '/header.php';
-?>
 
-<?php
 $id = $_GET['id'];
 $post = getArticleById($posts, $id);
-
 ?>
-
-
 <main class="main-article">
     <h2 class="title-article"><?= $post['title']; ?></h2>
     <div class="img-box">
@@ -26,10 +21,7 @@ $post = getArticleById($posts, $id);
             incrementLikeCounter($id);
         }
         ?>
-
     </span>
-
-
     <article class="main-article">
         <p class="content"> <?= $post['content']; ?></p>
         <span class="author-span">
@@ -38,9 +30,6 @@ $post = getArticleById($posts, $id);
     </article>
 
 </main>
-
-
-
 </body>
 
 </html>
