@@ -17,9 +17,9 @@ $post = getArticleById($posts, $id);
             <label for="like" class="like-text"><?= $post['like_counter']; ?></label>
         </form>
         <?php
-        if (array_key_exists('like', $_POST)) {
+        if (array_key_exists('like', $_POST)) :
             incrementLikeCounter($id);
-        }
+        endif;
         ?>
     </span>
     <article class="main-article">

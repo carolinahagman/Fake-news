@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-require __DIR__ . '/data.php';
 
 //Connecting the full article page and the preview article by the article id 
 function getArticleById(array $posts, string $id): array

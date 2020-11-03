@@ -1,6 +1,9 @@
 @font-face {
     font-family: "Breathing";
-    src: url("/fonts/breathing/Breathing.ttf");
+    src: url("/fonts/breathing/Breathing.woff") format("woff"),
+        url("/fonts/breathing/Breathing.woff2") format("woff2");
+    font-weight: 100;
+    font-style: normal;
 }
 :root {
     /* fonts */
