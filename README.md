@@ -9,6 +9,7 @@ The assignment was to create a news feed consisting of fake articles.
 -   PHP
 -   HTML
 -   CSS
+-   Sqlite
 
 ## Installation
 You need [PHP](https://www.php.net/) to view this project. 
